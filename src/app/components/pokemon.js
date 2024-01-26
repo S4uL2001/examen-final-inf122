@@ -52,21 +52,24 @@ function Pokemon(props) {
             <p className={style.nom}># {pokemonData.id}</p>
             <img src={pokemonData.imageUrl} alt={pokemonData.name} width={500} height={500} />
             <h3 className={style.t}>About</h3>
-            <div>
+            <div className={style.flexContainer}>
                 <div className={style.am}>
-                    <p>Type:            </p> <p className={style.ps}>{pokemonData.type}</p>
+                    <p>Type:</p> <p className={style.ps}>{pokemonData.type}</p>
                 </div>
                 <div className={style.am}>
-                    <p>Height:          </p> <p className={style.ps}>{pokemonData.height}</p>
+                    <p>Height:</p> <p className={style.ps}>{pokemonData.height} m</p>
                 </div>
                 <div className={style.am}>
-                    <p>Weight:          </p> <p className={style.ps}>{pokemonData.weight}</p>
+                    <p>Weight:</p> <p className={style.ps}>{pokemonData.weight} kg</p>
                 </div>
                 <div className={style.am}>
-                    <p >Abilities:          </p> <p className={style.ps}>{pokemonData.abilities.join(", ")}</p>
+                    <p>Abilities:</p> <p className={style.ps}>{pokemonData.abilities.join(", ")}</p>
                 </div>
             </div>
+
+
             <div>
+
                 <h3>Stats</h3>
                 <p>HP: {pokemonData.stats.hp}</p>
                 <p>Attack: {pokemonData.stats.attack}</p>

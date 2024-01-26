@@ -1,0 +1,39 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.box h1 {
+    font-size: 30px;
+    
+}
+.H{
+    color: rgb(0, 140, 255);
+    text-transform: capitalize;   
+}
+.ps{
+    display: flex;
+    text-align: right;
+}
+.box img {
+  
+    border-radius: 10%;
+    object-fit: cover;
+}
+.nom{
+    display: flex;
+    flex-direction: row;
+}
+.t{
+    margin-left: 5px solid rgb(0, 0, 0);
+}
+.am{
+    display: flex;
+    column-count: 2;
+
+}
+.ps{
+    color: rgb(58, 58, 58);
+}
